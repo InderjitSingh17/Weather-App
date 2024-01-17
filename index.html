@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- CSS Files -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <!-- Title -->
+        <div class="title-box">
+            <h2>Weather App</h2>
+        </div>
+
+        <!-- BTN -->
+        <div class="btn-box">
+            <div class="your_weather">Your Weather</div>
+            <div class="search_weather">Search Weather</div>
+        </div>
+
+        <!-- Weather Container -->
+        <div class="weather-container">
+
+            <!-- user-location-access -->
+            <div class="user-location-access active">
+                <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/location.png" alt="location" />
+                <p class="t-user-access">Grant Location Access</p>
+                <p class="ppp">Allow Access To Get Weather Information</p>
+                <button class="btn-grant-access">GRANT ACCESS</button>
+            </div>
+
+            <!-- user weather show -->
+            <div class="user-weather-show">
+
+                <div class="city-name-box">
+                    <p class="city-name"></p>
+                </div>
+
+                <div class="temp-box">
+                    <h1 class="temp"></h1>
+                    <h1><img width="64" height="64"
+                            src="https://img.icons8.com/external-color-outline-adri-ansyah/64/external-user-home-screen-apps-color-outline-adri-ansyah-76.png"
+                            alt="external-user-home-screen-apps-color-outline-adri-ansyah-76" /></h1>
+                </div>
+
+                <div class="des-box">
+                    <p class="desc"></p>
+                </div>
+
+                <div class="img-box">
+                    <img class="weather-img">
+                </div>
+
+                <div class="other">
+
+                    <div class="box-1">
+                        <img width="64" height="64" src="https://img.icons8.com/arcade/64/wind.png" alt="wind" />
+                        <p class="wind-title">Wind Speed</p>
+                        <p class="speed"></p>
+                    </div>
+
+                    <div class="box-2">
+                        <img width="64" height="64" src="https://img.icons8.com/arcade/64/wet.png" alt="wet" />
+                        <p class="Humidity-title">Humidity</p>
+                        <p class="Humidity"></p>
+                    </div>
+
+                    <div class="box-3">
+                        <img width="64" height="64" src="https://img.icons8.com/arcade/64/cloud.png" alt="cloud" />
+                        <p class="cloud-title">Cloud</p>
+                        <p class="cloud"></p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- user search box -->
+            <div class="user-search-box">
+                <input placeholder="Search for City..." class="input-box">
+                <button class="btn-search" type="button">
+                    <i class="ri-search-2-line white"></i>
+                </button>
+            </div>
+
+            <!-- Loging screen -->
+
+            <div class="loading-box">
+                <img src="https://media.tenor.com/2hNqKj3ArX8AAAAi/loading.gif" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <!-- JS Files -->
+    <script src="script.js"></script>
+</body>
+
+</html>
